@@ -65,9 +65,9 @@ html,body{height:100%}
 
 /* 菜单、幻灯片样式 */
 
-.navbar_con{height:40px;border-bottom:2px solid #E89F03}
+.navbar_con{height:40px;border-bottom:2px solid #E89B03}
 .navbar{width:1200px;margin:0 auto;}
-.navbar h1{width:200px;height:40px;line-height:40px;text-align: center;font-size:14px;color:#fff;background-color:#E89F03;}
+.navbar h1{width:200px;height:40px;line-height:40px;text-align: center;font-size:14px;color:#fff;background-color:#E89B03;}
 
 .navbar .subnav_con{width:200px;height:40px;background-color:#4277ad;position:relative;cursor:pointer;}
 

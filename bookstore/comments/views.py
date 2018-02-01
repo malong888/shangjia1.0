@@ -7,7 +7,6 @@ from users.models import Passport
 from django.views.decorators.csrf import csrf_exempt
 import json
 import redis
-# Create your views here.
 
 EXPIRE_TIME = 60 * 10
 

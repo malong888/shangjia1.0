@@ -8,7 +8,7 @@
         <div class="navbar">
             <h1 class="fl">全部课程分类</h1>
             <ul class="navlist fl">
-                <li><a href="">首页</a></li>
+                <li><a href="{% url 'books:index' %}">首页</a></li>
                 <li class="interval">|</li>
                 <li><a href="">全部课程</a></li>
                 <li class="interval">|</li>
@@ -21,27 +21,27 @@
 
     <div class="center_con clearfix">
         <ul class="subnav fl">
-            <li><a href="#model01" class="python">自考</a></li>
-            <li><a href="#model02" class="javascript">远程教育</a></li>
-            <li><a href="#model03" class="algorithms">成考</a></li>
-            <li><a href="#model04" class="machinelearning">在校研究生</a></li>
-            <li><a href="#model05" class="operatingsystem">专升本</a></li>
-            <li><a href="#model06" class="database">网教</a></li>
+            <li><a href="#" class="python">自考</a></li>
+            <li><a href="#" class="javascript">远程教育</a></li>
+            <li><a href="#" class="algorithms">成考</a></li>
+            <li><a href="#" class="machinelearning">在校研究生</a></li>
+            <li><a href="#" class="operatingsystem">专升本</a></li>
+            <li><a href="#" class="database">网教</a></li>
         </ul>
         <div class="slide fl">
             <ul class="slide_pics">
-                <li><img src="{% static 'images/slide.jpg' %}" alt="幻灯片" style="width: 760px; height: 270px;"></li>
-                <li><img src="{% static 'images/slide02.jpg' %}" alt="幻灯片" style="width: 760px; height: 270px;"></li>
-                <li><img src="{% static 'images/slide03.jpg' %}" alt="幻灯片" style="width: 760px; height: 270px;"></li>
-                <li><img src="{% static 'images/slide04.jpg' %}" alt="幻灯片" style="width: 760px; height: 270px;"></li>
+                <li><img src="{% static 'images/pic1.png' %}" alt="幻灯片" style="width: 760px; height: 270px;"></li>
+                <li><img src="{% static 'images/pic2.png' %}" alt="幻灯片" style="width: 760px; height: 270px;"></li>
+                <li><img src="{% static 'images/pic3.png' %}" alt="幻灯片" style="width: 760px; height: 270px;"></li>
+{#                <li><img src="{% static 'images/pic4.png' %}" alt="幻灯片" style="width: 760px; height: 270px;"></li>#}
             </ul>
             <div class="prev"></div>
             <div class="next"></div>
             <ul class="points"></ul>
         </div>
         <div class="adv fl">
-            <a href="#"><img src="{% static 'images/adv01.jpg' %}" style="width: 240px; height: 135px;"></a>
-            <a href="#"><img src="{% static 'images/adv02.jpg' %}" style="width: 240px; height: 135px;"></a>
+            <a href="#"><img src="{% static 'images/pic9.png' %}" style="width: 240px; height: 270px;"></a>
+{#            <a href="#"><img src="{% static 'images/adv02.jpg' %}" style="width: 240px; height: 135px;"></a>#}
         </div>
     </div>
 
@@ -58,7 +58,7 @@
         </div>
 
         <div class="book_con clearfix">
-            <div class="book_banner fl"><img src="{% static 'images/banner01.jpg' %}"></div>
+            <div class="book_banner fl"><img src="{% static 'images/1.jpg' %}"></div>
             <ul class="book_list fl">
                 {% for book in python_hot %}
                     <li>
@@ -84,7 +84,7 @@
         </div>
 
         <div class="book_con clearfix">
-            <div class="book_banner fl"><img src="{% static 'images/banner02.jpg' %}"></div>
+            <div class="book_banner fl"><img src="{% static 'images/3.jpg' %}"></div>
             <ul class="book_list fl">
                 {% for book in javascript_hot %}
                     <li>
@@ -110,7 +110,7 @@
         </div>
 
         <div class="book_con clearfix">
-            <div class="book_banner fl"><img src="{% static 'images/banner03.jpg' %}"></div>
+            <div class="book_banner fl"><img src="{% static 'images/2.jpg' %}"></div>
             <ul class="book_list fl">
                 {% for book in algorithms_hot %}
                     <li>
@@ -136,7 +136,7 @@
         </div>
 
         <div class="book_con clearfix">
-            <div class="book_banner fl"><img src="{% static 'images/banner04.jpg' %}"></div>
+            <div class="book_banner fl"><img src="{% static 'images/4.jpg' %}"></div>
             <ul class="book_list fl">
                 {% for book in machinelearning_hot %}
                     <li>
@@ -162,7 +162,7 @@
         </div>
 
         <div class="book_con clearfix">
-            <div class="book_banner fl"><img src="{% static 'images/banner05.jpg' %}"></div>
+            <div class="book_banner fl"><img src="{% static 'images/5.jpg' %}"></div>
             <ul class="book_list fl">
                 {% for book in operatingsystem_hot %}
                     <li>
@@ -188,7 +188,7 @@
         </div>
 
         <div class="book_con clearfix">
-            <div class="book_banner fl"><img src="{% static 'images/banner06.jpg' %}"></div>
+            <div class="book_banner fl"><img src="{% static 'images/6.jpg' %}"></div>
             <ul class="book_list fl">
                 {% for book in database_hot %}
                     <li>

@@ -13,8 +13,8 @@ from books.models import Books
 from django_redis import get_redis_connection
 from bookstore import settings
 
-
 # Create your views here.
+
 
 def register(request):
 	'''显示用户注册页面'''
